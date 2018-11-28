@@ -1,0 +1,23 @@
+- hosts: localhost
+  roles:
+#    - nuage-vspk-test-basic
+    - nuage-vspk-test-advanced
+
+#
+# Configure to match your environment
+#
+  vars:
+    nuage_auth:
+      api_username: csproot
+      api_password: csproot
+      api_enterprise: csp
+      api_url: https://portalproxy.lab.local
+      api_version: v5_0
+    enterprise_name: Test_Org_Enterprise1
+    enterprise_new_name: Test_Org_Updated
+    enterprise_admin_username: enterprise_admin1
+    enterprise_admin_password: Password123.
+    enterprise_admin_new_password: Password123,
+    enterprise_admin_first_name: org
+    enterprise_admin_last_name: admin1
+    enterprise_admin_email: orgadmin1@lab.local
